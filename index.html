@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Milano Hotels</title>
+  <link rel="stylesheet" href="css/all.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- font awesome cdn link  -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+<section class="header">
+   <div class="flex">
+      <a href="#home" class="logo"><img src="images/Logo.png" alt="" class="rounded-circle" style="width: 50px;" > Hotels And Resorts</a>
+      
+        <!-- Button trigger modal -->
+      <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#exampleModal">
+        check availability
+      </button>
+ 
+ <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <section class="reservation" id="reservation" > 
+        
+                  <form action="" method="post">
+                    <h3>make a reservation</h3>
+                    <div class="flex">
+                        <div class="box">
+                          <p>check in <span>*</span></p>
+                          <input type="date" name="check_in" class="input" required>
+                        </div>
+                        <div class="box">
+                          <p>check out <span>*</span></p>
+                          <input type="date" name="check_out" class="input" required>
+                        </div>
+                        <div class="box">
+                          <p>rooms <span>*</span></p>
+                          <select name="rooms" class="input" required>
+                              <option value="1">1 room</option>
+                              <option value="2">2 rooms</option>
+                              <option value="3">3 rooms</option>
+                              <option value="4">4 rooms</option>
+                              <option value="5">5 rooms</option>
+                              <option value="6">6 rooms</option>
+                          </select>
+                        </div>
+                    </div>
+                  </form>
+              </section> 
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="menu-btn" class="fas fa-bars"></div>
+
+            </div>
+   
+
+         
+    <nav class="navbar nav ">
+        <a href="#home">home</a>
+         
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#about"  data-bs-toggle="dropdown" >
+               About
+             </a>
+             <ul class="dropdown-menu " style="color: rgb(63, 37, 6); background-color: rgb(250, 214, 166);">
+               <li><a class="dropdown-item" href="#">best staff</a></li>
+               <li><a class="dropdown-item" href="#">foods&drinks</a></li>
+               <li><a class="dropdown-item" href="#">swimming pools</a></li>
+             </ul>
+           </li>
+  
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#reservation"  data-bs-toggle="dropdown" >
+               Reservation
+             </a>
+             <ul class="dropdown-menu " style="color: rgb(63, 37, 6); background-color: rgb(250, 214, 166);">
+               <li><a class="dropdown-item" href="#reservation">how to reserve</a></li>
+               <hr style="width: 200px; ">
+               <li><a class="dropdown-item" href="#accordionExample">how to cancel</a></li>
+               <li><a class="dropdown-item" href="#accordionExample">payment methods</a></li>
+             </ul>
+           </li>
+        
+
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+      <a href="#reviews">Reviews</a>
+    </div>
+  </div>
+   </nav>
+
+  </section>
+
+<!-- header section ends -->
+
+
+<!-- home section starts  -->
+<section class="home" id="home">
+
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+   </div>
+    <div class="carousel-inner " >
+      <div class="carousel-item active" >
+        <img src="images/gallery-img-2.webp" class="d-block w-100 c-img" alt="..." >
+        <div class="carousel-caption  d-md-block" >
+          <h5 class="display-3"> Luxurious Rooms</h5>
+          <p >Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <!-- <a href="#" class="btn btn-lg  ">check availability</a> -->
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="images/food0.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5 class="display-3"> Foods & Drinks</h5>
+          <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <!-- <a href="#" class="btn btn-lg  ">make a reservation</a> -->
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="images/lobby-398845_1280.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption  d-md-block">
+          <h5 class="display-3"> Luxurious Halls</h5>
+          <p >Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+
+          <!-- <a href="#" class="btn btn-lg  ">contact us</a> -->
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <div class="social-icons">
+    <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+   
+  </div>
+
+</section>
+
+<!-- home section ends -->
+<section class="btn-alert">
+<button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Plan your Stay
+</button>
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"  tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="z-index: 10050;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+
+                <h3>Customize Your Stay</h3>
+                <p>Personalize your experience:</p>
+              
+              
+                <h3>Discover Local Attractions</h3>
+                <p>Explore nearby attractions:</p>
+                
+              
+                <h3>Add Transportation</h3>
+                <p>Arrange transportation services:</p>
+      </div>
+  <div class="modal-footer">
+    <button type="button" class="btn ">GO ON</button>
+    <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+</div>
+    </div>
+</div>
+</div>
+</section>
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="section-header">
+      <h2 class="section-title">our facilities</h2>
+      <span class="line"></span>
+  </div>
+  <div class="container">
+    <div class="card mb-3 ">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/about-img-1.jpg"class="img-fluid rounded-start" alt="..." >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h2 class="card-title">Best Staff</h2>
+              <p class="card-text" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+              <p class="card-text"><small class="text-muted"> <a href="#reservation" class="btn">Read More</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3 ">
+        <div class="row revers g-0 ">
+          <div class="col-md-4 ">
+          <img src="images/1.png"class="img-fluid rounded-start" alt="..." style=" clip-path:polygon(100% 0, 100% 99%, 0 99%, 45% 0, 45% 0);" >
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+              <h2 class="card-title" >Best Foods</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+              <p class="card-text"><small class="text-muted"> <a href="#reservation" class="btn">Read More</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card mb-3" >
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="images/about_1.png"class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body" >
+              <h2 class="card-title">Swimming Pools</h2>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi laborum maxime eius aliquid temporibus unde?</p>
+              <p class="card-text"><small class="text-muted"> <a href="#reservation" class="btn">Read More</a></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+<!-- about section ends -->
+<!-- services section starts  -->
+  <section class="services">
+   <div class="section-header">
+      <h2 class="section-title">our services</h2>
+      <span class="line"></span>
+  </div>
+   <div class="box-container">
+      <div class="box aba">
+         <img src="images/icon-1.png" alt="">
+         <h3>food & drinks</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box aba">
+         <img src="images/icon-2.png" alt="">
+         <h3>outdoor dining</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box aba">
+         <img src="images/icon-3.png" alt="">
+         <h3>beach view</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box aba">
+         <img src="images/icon-4.png" alt="">
+         <h3>decorations</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box aba">
+         <img src="images/icon-5.png" alt="">
+         <h3>swimming pool</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+      <div class="box aba">
+         <img src="images/icon-6.png" alt="">
+         <h3>resort beach</h3>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero, sunt?</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- services section ends -->
+
+<div class="gallery" id="gallery">
+   
+   <div class="section-header" >
+       <h2 class="section-title" >Our Gallery</h2>
+       <span class="line"></span>
+   </div> 
+   <div class="container">
+       <div class="gallery-content">
+           <div class="gallery-item">
+               <img src="images/room3.jpg" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                  </h3>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           <div class="gallery-item mg">
+               <img src="images/gallery-img-2.webp" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                     </h3>
+                     <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                     <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           <div class="gallery-item">
+               <img src="images/gallery-img-3.webp" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                  </h3>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           
+           <div class="gallery-item">
+               <img src="images/home-img-1.jpg" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                  </h3>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           <div class="gallery-item mg">
+               <img src="images/gallery-img-5.webp" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                  </h3>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           <div class="gallery-item">
+               <img src="images/room5.jpg" alt="">
+               <div class="layer-content">
+                   <div class="layer-info">
+                   <span class="category">Deluxe Room
+                  </span>
+                   <h3 class="layer-content-title">From $250/night
+                  </h3>
+                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+               </div> <!-- layer-info -->
+               </div> <!-- /layer-content -->
+           </div> <!-- gallery item -->
+           <div class="clear"></div>
+           </div> <!-- /gallery-content -->
+       </div> <!-- /container -->
+</div>
+
+
+
+
+<!-- gallery section ends -->
+<!-- blog section starts -->
+<div class="blog pad">
+   <div class="section-header">
+       <h2 class="section-title">Ongoing Offers</h2>
+       <span class="line"></span>
+   </div> <!-- /section-header -->
+   <div class="container">
+       <div class="blog-content">
+           <div class="blog-item">
+               <div class="blog-item-img">
+                   <img src="images/new1.png" alt="this is image"  draggable="false" >
+               </div> <!-- ./block-item-img -->
+               <div class="blog-info">
+               <h3 class="blog-title">Up to 35% savings on Club
+                  rooms and Suites </h3>
+                  <ul class="blog-list">
+                     <li>Luxaries condition</li>
+                     <li>3 Adults & 2 Children size</li>
+                     <li>Sea view side</li>
+                 </ul>               
+                 <a href="#" class="blog-link btn" style="color: rgb(242, 207, 177);">Reserve Your Stay</a>
+           </div>
+           </div> <!-- ./blog-item -->
+           <div class="blog-item mg">
+               <div class="blog-item-img">
+                   <img src="images/new2.png" alt="this is image"  draggable="false">
+               </div> <!-- ./block-item-img -->
+               <div class="blog-info">
+                  <h3 class="blog-title">Up to 35% savings on Club
+                     rooms and Suites </h3>
+                     <ul class="blog-list">
+                        <li>Luxaries condition</li>
+                        <li>3 Adults & 2 Children size</li>
+                        <li>Sea view side</li>
+                    </ul>               
+                    <a href="#" class="blog-link btn" style="color: rgb(242, 207, 177);">Reserve Your Stay</a>
+              </div>
+           </div> <!-- ./blog-item -->
+           <div class="blog-item">
+               <div class="blog-item-img">
+                   <img src="images/new3.png" alt="this is image" title="bird" draggable="false">
+               </div> <!-- ./block-item-img -->
+               <div class="blog-info">
+                  <h3 class="blog-title">Up to 35% savings on Club
+                     rooms and Suites </h3>
+                     <ul class="blog-list">
+                        <li>Luxaries condition</li>
+                        <li>3 Adults & 2 Children size</li>
+                        <li>Sea view side</li>
+                    </ul>               
+                    <a href="#" class="blog-link btn" style="color: rgb(242, 207, 177);">Reserve Your Stay</a>
+              </div> <!-- ./blog-info -->
+           </div> <!-- ./blog-item -->
+       </div> <!-- ./blog-content -->
+   </div> <!-- ./container -->
+</div>
+<!-- blog section ends -->
+
+<div class="numbers">
+   <div class="overlay">
+       <div class="container">
+           <div class="numbers-items">
+               <div class="number-item">
+                   <i class="icon fa fa-users "></i>
+                   <h3 class="number-item-title">500k</h3>
+                   <span class="number-item-text">happy clients</span>
+               </div>
+               <div class="number-item">
+                   <i class="icon fa fa-trophy "></i>
+                   <h3 class="number-item-title">12</h3>
+                   <span class="number-item-text">awards won</span>
+               </div>
+               <div class="number-item">
+                   <i class="icon fa fa-coffee "></i>
+                   <h3 class="number-item-title">154k</h3>
+                   <span class="number-item-text">cups of coffee</span>
+               </div>
+               <div class="number-item">
+                   <i class="icon fa fa-file "></i>
+                   <h3 class="number-item-title">1000</h3>
+                   <span class="number-item-text">orders delivered</span>
+               </div>
+           </div> <!-- ./numbers-items -->
+       </div> <!-- ./container -->
+   </div> <!-- ./overlay -->
+</div>
+
+
+<!-- reservation section starts  -->
+
+ <section class="reservation" id="reservation"> 
+  
+   <form action="" method="post">
+      <h3 >make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section> 
+
+<!-- reservation section ends -->
+
+
+
+<!-- contact section starts  -->
+
+<section class="contact" id="contact">
+
+   <div class="row">
+
+      <form action="" method="post">
+         <h3>send us message</h3>
+         <input type="text" name="name" required maxlength="50" placeholder="enter your name" class="box">
+         <input type="email" name="email" required maxlength="50" placeholder="enter your email" class="box">
+         <input type="number" name="number" required maxlength="10" min="0" max="9999999999" placeholder="enter your number" class="box">
+         <textarea name="msg" class="box" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+         <input type="submit" value="send message" name="send" class="btn">
+      </form>
+
+
+   <div class="accordion faq" id="accordionExample">
+         <h3 class="title">frequently asked questions</h3>
+   <div class="box accordion-item ">
+      <h3 class="accordion-header" id="headingOne" >
+         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="text-transform: capitalize;">
+         how to cancel?
+         </button>
+      </h3>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+         <div class="accordion-body" style="font-weight: bolder;font-size: 15px;color: brown;">
+         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet deleniti incidunt quos ad? Autem deserunt impedit officia pariatur quasi aliquam, quis omnis necessitatibus molestiae libero totam sapiente rerum odio corrupti!
+         </div>
+      </div>
+   </div>
+         <div class="accordion-item box">
+           <h3 class="accordion-header" id="headingTwo">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="text-transform: capitalize;">
+               is there any vacancy?
+             </button>
+           </h3>
+           <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+             <div class="accordion-body" style="font-weight: bolder;font-size: 15px;color: brown;">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, quaerat fuga. Ut possimus, exercitationem provident sint quae temporibus minus consectetur distinctio. Laborum, illo beatae. Vel iure odio quas modi saepe.
+             </div>
+           </div>
+         </div>
+         <div class="accordion-item box">
+           <h3 class="accordion-header" id="headingThree">
+             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="text-transform: capitalize;">
+               what are payment methods?
+             </button>
+           </h3>
+           <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+             <div class="accordion-body" style="font-weight: bolder;font-size: 15px;color: brown;">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dolorem rerum tempore? Iusto voluptate nam numquam officiis consequuntur autem inventore nulla fugiat sequi, adipisci molestiae fugit eum amet necessitatibus ipsa!
+             </div>
+           </div>
+         </div>
+         <div class="accordion-item box">
+            <h3 class="accordion-header" id="headingFour">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="text-transform: capitalize;">
+               how to claim coupons codes?
+              </button>
+            </h3>
+            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="font-weight: bolder;font-size: 15px;color: brown;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis, nulla amet dolorum temporibus aliquam quasi nam cumque veritatis eveniet sunt nobis maiores officia, neque eos. Provident molestiae voluptatibus rem.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item box">
+            <h3 class="accordion-header" id="headingFive">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive" style="text-transform: capitalize;">
+               what are the age requirements?
+              </button>
+            </h3>
+            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+              <div class="accordion-body" style="font-weight: bolder;font-size: 15px;color: brown;">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium blanditiis, nulla amet dolorum temporibus aliquam quasi nam cumque veritatis eveniet sunt nobis maiores officia, neque eos. Provident molestiae voluptatibus rem.
+              </div>
+            </div>
+          </div>
+         
+       </div>
+      
+   </div>
+
+</section>
+
+<!-- contact section ends -->
+
+
+<!-- reviews section starts  -->
+
+<section class="reviews" id="reviews">
+   <div class="section-header">
+      <h2 class="section-title">our clients reviews</h2>
+      <span class="line"></span>
+  </div>
+      <div class="clients">
+            <div class="container ">
+               <div id="carouselExampleControls" class="carousel slide rev" data-bs-ride="carousel">
+                   <div class="carousel-inner">
+                     <div class="carousel-item active">
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c1.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fa fa-facebook"></i>
+                                           <i class="fa fa-twitter"></i>
+                                           <i class="fa fa-linkedin"></i>
+                                           <i class="fa fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+               
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c5.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fa fa-facebook"></i>
+                                           <i class="fa fa-twitter"></i>
+                                           <i class="fa fa-linkedin"></i>
+                                           <i class="fa fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+               
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c4.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fa fa-facebook"></i>
+                                           <i class="fa fa-twitter"></i>
+                                           <i class="fa fa-linkedin"></i>
+                                           <i class="fa fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+                          </div>
+                         </div>
+                     
+                           <div class="carousel-item">
+                               <div class="row">
+                                   <div class="col-lg-4">
+                                       <div class="card">
+                                           <div class="box front">
+                                               <img src="Images/c3.jpg" alt="">
+                                               <h2>jessica</h2>
+                                               <h4>CEO,Microsoft</h4>
+                                               <p class="socials">
+                                                   <i class="fa fa-facebook"></i>
+                                                   <i class="fa fa-twitter"></i>
+                                                   <i class="fa fa-linkedin"></i>
+                                                   <i class="fa fa-youtube"></i>
+                                               </p>
+                                           </div>
+                                           <div class="box back">
+                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                           </div>
+                       
+                                       </div>
+                                   </div>
+                       
+                                   <div class="col-lg-4">
+                                       <div class="card">
+                                           <div class="box front">
+                                               <img src="Images/c2.jpg" alt="">
+                                               <h2>jessica</h2>
+                                               <h4>CEO,Microsoft</h4>
+                                               <p class="socials">
+                                                   <i class="fa fa-facebook"></i>
+                                                   <i class="fa fa-twitter"></i>
+                                                   <i class="fa fa-linkedin"></i>
+                                                   <i class="fa fa-youtube"></i>
+                                               </p>
+                                           </div>
+                                           <div class="box back">
+                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                           </div>
+                       
+                                       </div>
+                                   </div>
+                       
+                                   <div class="col-lg-4">
+                                       <div class="card">
+                                           <div class="box front">
+                                               <img src="Images/c1.jpg" alt="">
+                                               <h2>jessica</h2>
+                                               <h4>CEO,Microsoft</h4>
+                                               <p class="socials">
+                                                   <i class="fa fa-facebook"></i>
+                                                   <i class="fa fa-twitter"></i>
+                                                   <i class="fa fa-linkedin"></i>
+                                                   <i class="fa fa-youtube"></i>
+                                               </p>
+                                           </div>
+                                           <div class="box back">
+                                             <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                           </div>
+                       
+                                       </div>
+                                   </div>
+                               </div>
+                         </div>
+                     
+                     <div class="carousel-item">
+                       <div class="row">
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c5.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fa fa-facebook"></i>
+                                           <i class="fa fa-twitter"></i>
+                                           <i class="fa fa-linkedin"></i>
+                                           <i class="fa fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+               
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c3.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fa fa-facebook"></i>
+                                           <i class="fa fa-twitter"></i>
+                                           <i class="fa fa-linkedin"></i>
+                                           <i class="fa fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+               
+                           <div class="col-lg-4">
+                               <div class="card">
+                                   <div class="box front">
+                                       <img src="Images/c4.jpg" alt="">
+                                       <h2>jessica</h2>
+                                       <h4>CEO,Microsoft</h4>
+                                       <p class="socials">
+                                           <i class="fab fa-facebook"></i>
+                                           <i class="fab fa-twitter"></i>
+                                           <i class="fab fa-linkedin"></i>
+                                           <i class="fab fa-youtube"></i>
+                                       </p>
+                                   </div>
+                                   <div class="box back">
+                                    <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis atque obcaecati tempore veritatis blanditiis reiciendis error maiores quasi, facere dolore illo neque enim dicta explicabo earum ut ullam nostrum aliquam?</p>
+                                   </div>
+               
+                               </div>
+                           </div>
+                          </div>
+                         </div>
+                   </div>
+                   
+                   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Previous</span>
+                   </button>
+                   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                     <span class="visually-hidden">Next</span>
+                   </button>
+                 </div>
+           
+               
+           
+               </div>
+
+</section>
+
+<!-- reviews section ends  -->
+
+<!-- footer section starts  -->
+<hr style="color: antiquewhite;">
+<section class="footer">
+
+   <div class="box-container  grid">
+
+      <div class="box">
+         <a href="#"><i class="fas fa-phone"></i> +02278373443</a>
+         <a href="#"><i class="fas fa-envelope"></i> asmaaabdelwahab666@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Cairo,Nasr City</a>
+      </div>
+
+      <div class="box ">
+         <a href="#home">home</a>
+         <a href="#about">about</a>
+         <a href="#reservation">reservation</a>
+         <a href="#gallery">gallery</a>
+         <a href="#contact">contact</a>
+         <a href="#reviews">reviews</a>
+      </div>
+
+      <div class="box ">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="copy">&copy; copyright @ 2024 by AsmaAbdelwahab | all rights reseved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
